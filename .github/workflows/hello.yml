@@ -3,8 +3,9 @@ name: Hello Workflow
 on: [push]
 
 jobs:
-  say-hello:
+  hello-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello, GitHub Actions!"
+      - name: Print message
+        run: echo "Hello, GitHub Actions!"
 
